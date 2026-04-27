@@ -1,184 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Petal & Paper</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petal and Paper</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Soft elegant fonts (Sunday/Hibernate-inspired feel) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #F6F3EF;
-      color: #3E3A36;
-      line-height: 1.7;
+      padding: 0;
+      background-color: #f8f6fb;
+      color: #2f2a3a;
+      position: relative;
+      overflow-x: hidden;
     }
 
-    .container {
-      max-width: 800px;
+    /* floral wash background */
+    .flowers {
+      position: fixed;
+      inset: 0;
+      background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
+      background-size: 320px;
+      opacity: 0.10;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
       margin: auto;
-      padding: 80px 20px;
+      padding: 60px 24px;
     }
 
     h1, h2 {
       font-family: 'Playfair Display', serif;
-      font-weight: 500;
-    }
-
-    h1 {
-      font-size: 3rem;
+      color: #6b5ca5;
       margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-top: 80px;
+      letter-spacing: 0.5px;
     }
 
     p {
-      font-size: 1.05rem;
-      margin-top: 20px;
+      font-family: 'Caveat', cursive;
+      font-size: 22px;
+      line-height: 1.6;
+      color: #3b3650;
     }
 
-    .subtitle {
-      font-style: italic;
-      color: #6B6A67;
+    a {
+      font-family: 'Caveat', cursive;
+      color: #4c7bd9;
+      text-decoration: none;
     }
 
-    .divider {
-      margin: 60px 0;
-      height: 1px;
-      background: #E0DBD6;
+    a:hover {
+      color: #6f93e6;
     }
 
-    footer {
-      margin-top: 100px;
-      font-size: 0.9rem;
-      color: #7A7672;
+    section {
+      margin-bottom: 60px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid #e6e0f3;
+      border-radius: 18px;
+      padding: 24px;
+      margin-top: 18px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+      font-family: 'Caveat', cursive;
+      font-size: 20px;
     }
   </style>
-</head><style>
-body {
-  <style>
-body {
-  background-color: #f7f4fb; /* off-white with a lilac tint */
-  font-family: 'Caveat', cursive;
-  margin: 0;
-  padding: 0;
-  color: #2f2a3a;
-}
-
-/* Headings */
-h1, h2, h3 {
-  color: #6b5ca5; /* soft lilac */
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-/* Paragraph text */
-p {
-  color: #3b3650;
-  line-height: 1.6;
-}
-
-/* Links (cornflower blue accent) */
-a {
-  text-decoration: none;
-  color: #4c7bd9; /* cornflower blue */
-}
-
-a:hover {
-  color: #6f93e6;
-}
-
-/* Sections feel airy */
-section {
-  padding: 40px 25px;
-}
-
-/* Optional soft card style (if you have boxes/sections) */
-.card {
-  background-color: #ffffffcc; /* translucent off-white */
-  border: 1px solid #e6e0f3;
-  border-radius: 16px;
-  padding: 20px;
-}
-
-/* Lists without hyphens or bullets */
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin: 8px 0;
-  color: #3b3650;
-}
-</style>
-/* Links */
-a {
-  text-decoration: none;
-  color: #5a3e36;
-}
-
-a:hover {
-  color: #8b5e53;
-}
-
-/* Optional soft container look */
-section {
-  padding: 40px;
-}
-</style>
+</head>
 
 <body>
-  <div class="container">
 
-    <h1>Petal & Paper</h1>
-    <p class="subtitle">Hand-painted cards, made slowly.</p>
+  <div class="flowers"></div>
 
-    <p>
-      For quiet moments, soft celebrations,  
-      and words that deserve to be kept.
-    </p>
+  <div class="content">
 
-    <div class="divider"></div>
+    <!-- HERO -->
+    <section>
+      <h1>Petal and Paper</h1>
+      <p>
+        A quiet collection of hand painted stationery and poems that do not rush.
+        Made for slow mornings, soft thoughts, and things that linger gently.
+      </p>
+    </section>
 
-    <h2>About</h2>
-    <p>
-      Petal & Paper began with paint-stained hands,  
-      spare sheets of paper,  
-      and the belief that some things should never be rushed.
-    </p>
+    <!-- ABOUT -->
+    <section>
+      <h2>About</h2>
+      <div class="card">
+        <p>
+          This is a small studio of paper and watercolor.
+          Every piece begins with a feeling before it becomes a form.
+          Nothing here is loud. Everything here is meant to be held slowly.
+        </p>
+      </div>
+    </section>
 
-    <p>
-      Each card is painted by hand; 
-      imperfect, intentional,  
-      and meant to be felt before it is read.
-    </p>
+    <!-- POETRY -->
+    <section>
+      <h2>Notes from the Studio</h2>
 
-    <div class="divider"></div>
+      <div class="card">
+        <p>
+          The brush does not ask permission before it moves.<br>
+          It leans into water the way memory leans into silence.<br>
+          And somehow, something beautiful appears anyway.
+        </p>
+      </div>
 
-    <h2>Cards</h2>
-    <p>
-      A small collection of hand-painted cards.  
-      No two are ever the same.
-    </p>
+      <div class="card">
+        <p>
+          Some colors arrive like visitors.<br>
+          They stay long enough to be remembered<br>
+          and then they leave without saying goodbye.
+        </p>
+      </div>
 
-    <div class="divider"></div>
+      <div class="card">
+        <p>
+          I tried to make everything perfect.<br>
+          But the paint preferred honesty.
+        </p>
+      </div>
+    </section>
 
-    <h2>Orders</h2>
-    <p>
-      To place an order or ask about custom pieces,  
-      you can reach me via Instagram or email.
-    </p>
+    <!-- CONTACT -->
+    <section>
+      <h2>Connect</h2>
+      <div class="card">
+        <p>
+          If you would like a piece, a commission, or simply to say hello,<br>
+          you can reach me through gentle words.
+        </p>
 
-    <footer>
-      © Petal & Paper — Made by hand. Meant to be kept.
-    </footer>
+        <p>
+          Instagram: <a href="#">yourhandle</a>
+        </p>
+      </div>
+    </section>
 
   </div>
+
 </body>
 </html>
